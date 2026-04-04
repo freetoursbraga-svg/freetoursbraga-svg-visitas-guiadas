@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reserva Gratis | Free Tours Braga</title>
+  <meta name="description" content="Reserva gratis el Free Tour Braga en español. Tours a las 11:00 y 15:00. Punto de encuentro en la Estación de Braga. Confirmación por WhatsApp." />
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://TEU-SITE-AQUI/reserva.html">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="logo">Free Tours Braga 🇪🇸</div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="reserva.html">Reserva</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-title">
+    <h1>Reserva Gratis</h1>
+    <p>Completa el formulario y se abrirá WhatsApp con tu reserva lista para enviar.</p>
+  </div>
+
+  <section>
+    <div class="container grid grid-2">
+
+      <div>
+        <h2>Información de la reserva</h2>
+        <p>
+          El tour se realiza todos los días según disponibilidad.
+          Es recomendable reservar para asegurar plaza.
+        </p>
+
+        <ul style="margin-top:15px;">
+          <li>🕒 Horarios: 11:00 y 15:00</li>
+          <li>⏱ Duración: 2 horas y media</li>
+          <li>📍 Punto de encuentro: Estación de Braga</li>
+          <li>☂ Guía con paraguas y bandera de España</li>
+          <li>🗣 Idioma: Español</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Formulario</h3>
+
+        <form onsubmit="event.preventDefault(); enviarReservaWhatsApp();">
+          <input type="text" id="nome" placeholder="Nombre completo" required>
+          <input type="email" id="email" placeholder="Correo electrónico" required>
+
+          <select id="pessoas" required>
+            <option value="">Número de personas</option>
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+            <option value="5 o más">5 o más</option>
+          </select>
+
+          <input type="date" id="data" required>
+
+          <select id="hora" required>
+            <option value="">Horario</option>
+            <option value="11:00">11:00</option>
+            <option value="15:00">15:00</option>
+          </select>
+
+          <textarea id="mensagem" placeholder="Mensaje opcional (ej: niños, movilidad reducida...)"></textarea>
+
+          <button type="submit">Enviar Reserva por WhatsApp</button>
+        </form>
+
+        <p class="small-note" style="margin-top:12px;">
+          Al enviar, se abrirá WhatsApp para confirmar tu reserva.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <h3>Free Tours Braga</h3>
+    <p>📧 freetoursbraga@gmail.com | 📞 +351 965 436 719</p>
+    <p>© 2026</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/351965436719" target="_blank">WhatsApp 💬</a>
+
+</body>
+</html>
